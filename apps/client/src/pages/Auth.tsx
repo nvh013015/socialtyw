@@ -1,17 +1,21 @@
-import Button from '@mui/material/Button'
+import { ButtonComponent } from '../components/Button'
 import { useNavigate } from 'react-router-dom'
+import '../styles/Auth.css'
 function Auth() {
     const navigate = useNavigate()
     const handleSignIn = () => {
         navigate('/Signin')
     }
+    const handleCrAccount = () => {
+        navigate('/createaccount')
+    }
 
     return (
-        <div>
-            <h1>This is auth pages</h1>
-            <Button variant="outlined">Create account</Button>
-            <h2>or</h2>
-            <Button variant="outlined" onClick={handleSignIn}>Sign in</Button>
+        <div className="auth-container">
+            <h1 className="h1">This is auth pages</h1>
+            <ButtonComponent variant="outlined" className="button" onClick={handleCrAccount}>Create account</ButtonComponent>
+            <h2 className='h2'>or</h2>
+            <ButtonComponent variant="outlined" className="button" onClick={handleSignIn}>Sign in</ButtonComponent>
         </div>
     )
 }
