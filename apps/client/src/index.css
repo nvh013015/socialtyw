@@ -4,19 +4,10 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: rgb(26, 26, 26);
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-}
-.body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }

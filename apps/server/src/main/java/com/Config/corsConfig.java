@@ -5,13 +5,14 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-public class corsConfig implements WebMvcConfigurer {
-    @SuppressWarnings("null")
+public class corsConfig implements WebMvcConfigurer{
     @Override
-    public void addCorsMappings(CorsRegistry registry) {
+    public void addCorsMappings(CorsRegistry registry){
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:5173") 
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                .allowedHeaders("*")
-                .allowCredentials(true);}
+            .allowedOrigins("localhost:5173")
+            .allowedMethods("GET","POST","PUT","DELETE","OPTIONS")
+            .allowedHeaders("*");
+            System.out.println("===> Allowed Origin: http://localhost:5173");
+            System.out.println("===> Allowed Methods: GET, POST, PUT, DELETE");
+    }
 }

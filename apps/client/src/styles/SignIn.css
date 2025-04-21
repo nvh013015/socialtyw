@@ -3,19 +3,4 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50% 0 0 0;
-}
-.button-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0 0 0;
-}
-.link {
-    display: grid;
-    margin-top: 100px;
-}
-.little {
-    margin-top: -10px;
-}
+    margin: 0 0 0 0;}
