@@ -5,8 +5,7 @@ import jakarta.persistence.Id;
 import lombok.Data;
 
 
-@Data 
-
+@Data
 @Entity
 public class Account {
     @Id
