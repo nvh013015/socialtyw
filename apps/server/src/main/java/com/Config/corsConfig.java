@@ -9,7 +9,7 @@ public class corsConfig implements WebMvcConfigurer{
     @Override
     public void addCorsMappings(CorsRegistry registry){
         registry.addMapping("/**")
-            .allowedOrigins("localhost:5173")
+            .allowedOrigins("http://localhost:5173/")
             .allowedMethods("GET","POST","PUT","DELETE","OPTIONS")
             .allowedHeaders("*");
             System.out.println("===> Allowed Origin: http://localhost:5173");

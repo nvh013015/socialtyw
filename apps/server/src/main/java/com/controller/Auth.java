@@ -13,7 +13,7 @@ import com.model.Account;
 
 @RestController
 @RequestMapping("/api/authenticate")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "http://localhost:5173/signin")
 public class Auth {
 
     @Autowired

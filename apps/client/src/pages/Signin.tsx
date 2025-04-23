@@ -1,4 +1,4 @@
-import '../styles/Signin.css'
+import styles from '../styles/SignIn.module.css'
 import { TextFieldComponent } from '../components/Textfield'
 import { ButtonComponent } from '../components/Button'
 import { useState } from 'react'
@@ -35,13 +35,15 @@ function Signin(){
         }
     }
     return (
-        <div className="signin-container">
+        <div className={styles.signin_container}>
             <h1>This is sign in page</h1>
+            <div className={styles.form}>
             <TextFieldComponent label="Email" placeholder='Example@gmail.com' name='email' onChange={handleChange}/>
             <TextFieldComponent label="Password" type="password" name='password' onChange={handleChange}/>
-            <div className="button-container">
+            </div>
+            <div className={styles.button_container}>
             <ButtonComponent className="button" onClick={ PostData } >Sign in</ButtonComponent>
-                <div className="link">
+                <div className={styles.link}>
                     <p >If you dont have account :</p>
                     <small className="little"><a href="/createaccount">Create account</a></small>
                 </div>

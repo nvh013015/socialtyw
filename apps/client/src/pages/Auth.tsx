@@ -1,6 +1,5 @@
 import { ButtonComponent } from '../components/Button'
 import { useNavigate } from 'react-router-dom'
-import '../styles/Auth.css'
 function Auth() {
     const navigate = useNavigate()
     const handleSignIn = () => {
